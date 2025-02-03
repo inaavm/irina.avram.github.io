@@ -88,7 +88,7 @@ body {
 
 .tag {
     font-family: monospace;
-    color: #4205ab;
+    color: #252ab7;
 }
 
 table {
@@ -148,4 +148,8 @@ tfoot {
    bottom: 2rem;
    left:auto;
    text-align: center;
+}
+
+.content {
+    color:#989494;
 }
