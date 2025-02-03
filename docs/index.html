@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Table Structure Cheat Sheet</title> 
+</head>
+<body>
+    <!-- HTML STRUCTURE -->
+    <div class="flex-parent">
+        <div class="container">
+                <div class="element-structure">
+                    <div class="element" data-element="main-table" scope="table">
+
+                        <span class="tag">&lt;table&gt;</span>
+                        
+                        <div class="element" data-element="caption">
+                            <span class="tag">&lt;caption&gt;</span>
+                            <span class="tag">&lt;/caption&gt;</span>
+                        </div>
+
+                        <div class="element" data-element="colgroup">
+                            <span class="tag">&lt;colgroup&gt;</span>
+                            <div class="element" data-element="col">
+                                <span class="tag">&lt;col&gt;</span>
+                            </div>
+                            <span class="tag">&lt;/colgroup&gt;</span>
+                        </div>
+
+                        <div class="element" data-element="thead" id="thead">
+                            <span class="tag">&lt;thead&gt;</span>
+                            <div class="element" data-element="th" id="th">
+                                <span class="tag">&lt;tr&gt;</span>
+                                <div class="element" id="Name" data-element="thcell">
+                                    <span class="tag" >&lt;th&gt;</span>
+                                    <span class="tag">&lt;/th&gt;</span>
+                                </div>
+                                <div class="element" id="Subject" data-element="thcell">
+                                    <span class="tag">&lt;th&gt;</span>
+                                    <span class="tag">&lt;/th&gt;</span>
+                                </div>
+                                <div class="element"  id="Points" data-element="thcell">
+                                    <span class="tag">&lt;th&gt;</span>
+                                    <span class="tag">&lt;/th&gt;</span>
+                                </div>
+                                <span class="tag">&lt;/tr&gt;</span>
+                            </div>
+                            <span class="tag">&lt;/thead&gt;</span>
+                        </div>
+
+                        <div class="element" data-element="tbody" id="tbody">
+                            
+                            <span class="tag">&lt;tbody&gt;</span>
+                            <div class="element" data-element="tr1">
+                                <span class="tag">&lt;tr&gt;</span>
+                                <div class="element" data-element="td" id="Alice">
+                                    <span class="tag">&lt;td&gt;</span>
+                                    <span class="tag">&lt;/td&gt;</span>
+                                </div>
+                                <div class="element" data-element="td" id="Math">
+                                    <span class="tag">&lt;td&gt;</span>
+                                    <span class="tag">&lt;/td&gt;</span>
+                                </div>
+                                <div class="element" data-element="td" id="80" scope="cell80">
+                                    <span class="tag">&lt;td&gt;</span>
+                                    <span class="tag">&lt;/td&gt;</span>
+                                </div>
+                                <span class="tag">&lt;/tr&gt;</span>
+                            </div>
+                   
+                            <div class="element" data-element="tr2">
+                                <span class="tag">&lt;tr&gt;</span>
+                                <div class="element" data-element="td" id="Ben">
+                                    <span class="tag">&lt;td&gt;</span>
+                                    <span class="tag">&lt;/td&gt;</span>
+                                </div>
+                                <div class="element" data-element="td" id="History">
+                                    <span class="tag">&lt;td&gt;</span>
+                                    <span class="tag">&lt;/td&gt;</span>
+                                </div>
+                                <div class="element" data-element="td" id="60" scope="cell60">
+                                    <span class="tag">&lt;td&gt;</span>
+                                    <span class="tag">&lt;/td&gt;</span>
+                                </div>
+                                <span class="tag">&lt;/tr&gt;</span>
+                            </div>
+                            <span class="tag">&lt;/tbody&gt;</span>
+                        </div>
+                        <div class="element" data-element="tfoot">
+                            <span class="tag">&lt;tfoot&gt;</span>
+                            <div class="element" data-element="tr">
+                                <span class="tag">&lt;tr&gt;</span>
+                                <div class="element" data-element="td" id="AG">
+                                    <span class="tag">&lt;td&gt;</span>
+                                    <span class="tag">&lt;/td&gt;</span>
+                                </div>
+                                <div class="element" data-element="td" id="AG">
+                                    <span class="tag">&lt;td&gt;</span>
+                                    <span class="tag">&lt;/td&gt;</span>
+                                </div>
+                                <div class="element" data-element="td" id="70" scope="cell70">
+                                    <span class="tag">&lt;td&gt;</span>
+                                    <span class="tag">&lt;/td&gt;</span>
+                                </div>
+                                <span class="tag">&lt;/tr&gt;</span>
+                            </div>
+                            <span class="tag">&lt;/tfoot&gt;</span>
+                        </div>
+                        <span class="tag">&lt;/table&gt;</span>
+                    </div>
+
+            </div>
+        </div>
+        <div class="container-column"> 
+            <!-- TABLE EXAMPLE -->
+            <div class="table-example">
+                <table id="main-table" data-element ="main-table" scope="table">
+                    <caption id="caption" data-element="caption">Table Example</caption>
+                    <colgroup>
+                        <col span="2">
+                        <col style="background-color: rgb(249, 248, 255);">
+                    </colgroup>
+                    <thead id="thead">
+                        <tr data-element="th">
+                            <th scope="col" id="Name">Name</th>
+                            <th scope="col" id="Subject">Subject</th>
+                            <th scope="col" data-element="colgroup" id="Points">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody data-element="tbody">
+                        <tr data-element="tr1">
+                            <td id="Alice">Alice</td>
+                            <td id="Math">Math</td>
+                            <td scope ="cell80"id="80" data-element="colgroup">80</td>
+                        </tr>
+                        <tr data-element="tr2">
+                            <td id="Ben">Ben</td>
+                            <td id="History">History</td>
+                            <td scope ="cell60" id="60" data-element="colgroup">60</td>
+                        </tr>
+                    </tbody>
+                    <tfoot data-element="tfoot">
+                        <tr>
+                            <td colspan="2" id="AG">Average Grade:</td>
+                            <td scope ="cell70" id="70" data-element="colgroup">70</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <!-- INFO CONTAINER -->
+            <div id="info-panel" class="info-panel">
+                <h3>Element Information</h3>
+                <p id="element-description"></p>
+            </div>
+            <div id="text-link">
+                <a href="https://www.w3schools.com">Learn more at w3schools</a></span>       
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

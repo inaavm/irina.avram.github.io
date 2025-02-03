@@ -1,0 +1,151 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    font-family: monospace;
+    /* font-family: 'Open Sans',serif */
+    font-weight:normal;
+    line-height: 1.6;
+    color: #484848;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.flex-parent {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.container-column {
+    width: 50%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #252ab7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Add title - is not displayed on the html */
+.container-column::before {
+    content: "Learn HTML Tables";
+    font-family: monospace;
+    font-weight:bold;
+    font-size: 2rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.element-structure {
+    /* width: 100%; */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: auto;
+    margin:2rem;   
+}
+
+.table-example {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+
+.info-panel {
+    width: 100%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border: 1px solid #252ab7;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+.element {
+    margin-left: 40px;
+    padding: 6px;
+    border-left: 2px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tag {
+    font-family: monospace;
+    color: #4205ab;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #ffeb3b !important;
+    transition: background-color 0.3s;
+}
+
+.border-highlight {
+    outline: 2px solid #ffeb3b;
+    outline-offset: -2px;
+    background-color: transparent !important;
+}
+
+.cell-highlight {
+    background-color: #ffeb3b !important;
+}
+
+#text-link a {
+    color:white;
+  
+}
+
+
+#text-link {
+   position: fixed;
+   width: 100%;
+   bottom: 2rem;
+   left:auto;
+   text-align: center;
+}
