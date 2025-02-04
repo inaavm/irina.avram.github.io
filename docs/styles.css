@@ -1,6 +1,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+* {
+    max-width: 100%;  
+    box-sizing: border-box;  
+}
 
 body {
     font-family: monospace;
@@ -138,7 +142,7 @@ tfoot {
 
 #text-link a {
     color:white;
-  
+    text-decoration: none;
 }
 
 
@@ -148,8 +152,97 @@ tfoot {
    bottom: 2rem;
    left:auto;
    text-align: center;
+   text-decoration: none;
 }
 
+#text-link:hover:after {
+    text-decoration: underline;
+ }
+
 .content {
-    color:#989494;
+    color:#adadad;
 }
+
+
+/* //mobile ---- */
+
+@media (max-width: 768px) {
+
+    .container-column::before {
+        content: "Learn HTML Tables";
+        font-family: monospace;
+        font-weight:bold;
+        font-size: 1rem;
+        color: white;
+        margin-top: 1rem;
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        box-sizing: border-box;   
+    }    
+
+    /* Stack the sections vertically */
+    .flex-parent {
+        flex-direction: column;
+        height: auto;
+    }
+
+     .container-column {
+        display: flex;  
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+        order:-1;
+    }
+
+     .table-example {
+        max-width: 80%;
+        overflow-x: auto;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    #info-panel {
+        display: none !important;
+    }
+    /* Make the HTML structure scrollable */
+    .container {
+        width: 100%;
+        max-height: 50vh;  
+        padding: 1rem;
+        background-color:#ffffff;;
+        display: flex;
+    }
+
+     .element-structure {
+        max-width: 100%;
+        color: white;
+        overflow-y: auto;
+        margin-left: 0;
+        margin-right: 0;
+     }
+
+     table {
+        justify-content: center;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+        background-color: #f2f2f2 !important;
+        }
+    }
+
+    /* Optional: Sticky table headers */
+    thead th {
+        position: sticky;
+        top: 0;
+        background-color: #f2f2f2;
+        z-index: 10;
+        
+    }
+
