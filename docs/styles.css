@@ -99,6 +99,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    overflow-x: hidden;
 }
 
 caption {
@@ -216,6 +217,7 @@ tfoot {
         /* display: flex; */
         justify-content: center;
         box-sizing: border-box;
+        margin-bottom:2rem;
  
     }
 
@@ -225,13 +227,15 @@ tfoot {
         overflow-y: auto;
         box-sizing: border-box;
         padding: 0 !important;
+        margin-bottom:2rem;
         
      }
 
      table {
         justify-content: center;
-        width: 100%;
+        width: 80%;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     th, td {
@@ -253,4 +257,31 @@ tfoot {
         margin-left: 1rem;
         width: 100%;
 
+    }
+
+    #text-link a {
+        color:#252ab7;
+    }
+
+    #text-link {
+        position: fixed;
+        bottom: 2rem;
+        color: #252ab7;
+        right: 1rem;
+        left: auto;
+        margin-top:2rem;
+        background-color: white;
+   
+    }
+    
+    .content {
+       color: rgb(155, 155, 155);
+    }
+    
+    .copyright {
+        position: fixed;
+        bottom: 0rem;
+        top:auto;
+        color: #252ab7;
+        left: 2rem;
     }
