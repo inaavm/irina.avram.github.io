@@ -154,6 +154,15 @@ tfoot {
    text-align: center;
 }
 
+.content {
+   color: rgb(155, 155, 155);
+}
+
+.copyright {
+    color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+}
 /* //mobile ---- */
 
 @media (max-width: 768px) {
@@ -216,10 +225,7 @@ tfoot {
         overflow-y: auto;
         box-sizing: border-box;
         padding: 0 !important;
-         
-      
         
- 
      }
 
      table {
