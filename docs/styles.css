@@ -92,7 +92,7 @@ body {
 
 .tag {
     font-family: monospace;
-    color: #252ab7;
+    color: #4205ab;
 }
 
 table {
@@ -142,7 +142,7 @@ tfoot {
 
 #text-link a {
     color:white;
-    text-decoration: none;
+  
 }
 
 
@@ -152,19 +152,6 @@ tfoot {
    bottom: 2rem;
    left:auto;
    text-align: center;
-   text-decoration: none;
-}
-
-#text-link:hover:after {
-    text-decoration: underline;
- }
-
-.content {
-    color:#adadad;
-}
-
-.copyright{
-    margin-bottom: 1rem;
 }
 
 /* //mobile ---- */
