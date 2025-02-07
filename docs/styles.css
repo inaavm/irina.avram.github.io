@@ -256,7 +256,6 @@ tfoot {
     .element {
         margin-left: 1rem;
         width: 100%;
-
     }
 
     #text-link a {
@@ -269,7 +268,6 @@ tfoot {
         right: 1rem;
         left: auto;
         margin-top:2rem;
-        background-color: white;
     }
     
     .content {
