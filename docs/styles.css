@@ -264,14 +264,12 @@ tfoot {
     }
 
     #text-link {
-        position: fixed;
         bottom: 2rem;
         color: #252ab7;
         right: 1rem;
         left: auto;
         margin-top:2rem;
         background-color: white;
-   
     }
     
     .content {
